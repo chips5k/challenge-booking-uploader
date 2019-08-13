@@ -7,7 +7,7 @@ A web app for uploading bookings from `.csv` files.
 ### Overview
 
 Existing functionality:
-- ExpressJS server with `GET` endpoint `/bookings` which responds with 100 existing bookings (from a hard-coded json file that is read in). Bookings have a time, duration, and user ID. 
+- ExpressJS server with `GET` endpoint `/bookings` which responds with existing bookings (from a hard-coded json file that is read in). Bookings have a time, duration, and user ID. 
 - ReactJS app which fetches and shows existing bookings in a list and has a file input for bookings files (`.csv` only). 
 - A `.csv` file with entries corresponding to bookings that is to be uploaded but which contains bookings that overlap with some of the existing bookings. 
 
@@ -22,7 +22,7 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
 ## Additional required features
 
 What needs to be added / changed:
-- The app needs to read and parse the provided `.csv` file when uploaded via the file input (dropzone). 
+- The app needs to read and parse the provided `.csv` file when submitted via the file input (dropzone). 
 - The app needs to identify new bookings parsed from this file that overlap with existing bookings. 
 - The app needs to visualise the existing bookings in a timeline instead of a list (i.e. as segments that are positioned based on their start time and have a width based on their duration). 
 - The app needs to show a similar timeline for the new bookings parsed from the file that shows which new bookings overlap with existing bookings (perhaps colour these bookings differently). 
