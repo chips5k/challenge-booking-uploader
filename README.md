@@ -29,4 +29,4 @@ What needs to be added / changed:
 - The app needs to make a `POST` request (`/bookings`) to the server to add the new bookings that don't overlap with existing bookings and refetch the list of bookings from the server. 
 - The server needs to allow this `POST` request (`/bookings`) from app and update the booking list it has in memory (and therefore the list it returns for the existing `GET` request). There is no need to modify the server to use an actual database instead of storing the data in memory. 
 
-Feel free to change any of the existing code (and add any dependencies) to achieve the required specifications / functionality. If you're having trouble starting or need help with any part, please send us an email and we'll give you a pointer.
+Feel free to change any of the existing code (and add any dependencies) to achieve the required specifications / functionality. There is no need to support old browsers, assume a recent version of Firefox/Chrome. If you're having trouble starting or need help with any part, please send us an email and we'll give you a pointer.
