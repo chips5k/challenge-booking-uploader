@@ -11,6 +11,10 @@ Existing functionality:
 - ReactJS app which fetches and shows existing bookings in a list and has a file input for bookings files (`.csv` only). 
 - A `.csv` file with entries corresponding to bookings that is to be uploaded but which contains bookings that overlap with some of the existing bookings. 
 
+Vintage React?
+
+We have a branch called `hooks` with a more modern version of the main App component. Feel free to use whichever version you find more comfortable.
+
 ### Instructions for use
 
 - To install dependencies: `yarn install`
