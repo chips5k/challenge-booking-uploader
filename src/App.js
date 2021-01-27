@@ -31,7 +31,7 @@ const bookingsConflict = (a, b) => {
     end: b.time + b.duration,
   };
 
-  return spanA.start <= spanB.end && spanA.end >= spanB.start;
+  return spanA.start < spanB.end && spanA.end > spanB.start;
 };
 
 const processBookings = (confirmed, pending) => {
