@@ -228,9 +228,9 @@ const Diary = ({ bookings }) => {
             conflicted={b.conflicted}
             pending={b.pending}
             hours={b.duration / HOUR_MILLIS}
-            // this will probably break :/
+            // naive rounding for now 1.4999~ = 1 day, 1.5 = 2 days
             offsetDays={Math.round(
-              (b.time - bookings[0].time) / DAY_MILLIS,
+              (b.time - sortedBookings[0].time) / DAY_MILLIS,
               10
             )}
             offsetHours={new Date(b.time).getHours() - startHour}
